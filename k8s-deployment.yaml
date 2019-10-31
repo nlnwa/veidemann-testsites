@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: veidemann-testsites
+spec:
+    selector:
+      matchLabels:
+        app: veidemann-testsites
+    template:
+      metadata:
+        labels:
+            app: veidemann-testsites
+      spec:
+        containers:
+        - name: veidemann-testsites
+          image: nginx-skaffold

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: veidemann-testsites
+spec:
+  selector:
+    app: veidemann-testsites
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 80
+  type: LoadBalancer
