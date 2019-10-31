@@ -12,3 +12,7 @@
 ```
  skaffold dev 
 ```
+## View testsites in a browser
+```
+ minikube service veidemann-testsites
+```
