@@ -5,7 +5,7 @@
 - minikube
 
 ## Setup
- - Install skaffold
+ - [Install skaffold](https://skaffold.dev/docs/install/)
  - Clone this repo
 
 ## Run veidemann-testsites in your minikube-cluster
