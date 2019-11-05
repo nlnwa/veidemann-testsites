@@ -3,14 +3,12 @@ kind: Ingress
 metadata:
   name: veidemann-testsites 
   namespace: default
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   rules:
   - host: veidemann.local
     http:
       paths:
-      - path: /testsites(/|$)(.*)
+      - path: /testsites
         backend:
           serviceName: veidemann-testsites 
           servicePort: 8080
